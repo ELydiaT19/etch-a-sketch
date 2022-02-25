@@ -4,9 +4,8 @@ let singleColorValue = "#000000";
 let mode = null;
 
 // SELECT ELEMENTS
-const gridContainer = document.getElementById("grid-child-container");
+const grid = document.getElementById("grid");
 const gridSizeInput = document.getElementById("grid-size-input");
-
 const colorInput = document.getElementById("color-input");
 
 const singlecolorBtn = document.getElementById("singlecolor-btn");
@@ -15,7 +14,6 @@ const eraserBtn = document.getElementById("eraser-btn");
 const clearBtn = document.getElementById("clear-btn");
 
 // DEFINE FNS
-
 // Enable btns
 function enableAllBtns() {
     const allBtns = document.querySelectorAll(".mode-btn");
@@ -49,7 +47,7 @@ function clearGrid() {
 function makeGrid() { 
     for (i = 0; i < gridSize; i++) {
         const row = document.createElement("div");
-        gridContainer.append(row);
+        grid.append(row);
         row.classList.add("row");
 
         for (j = 0; j < gridSize; j++) {
@@ -62,8 +60,8 @@ function makeGrid() {
 }
 
 function updateGridSizeLabel() {
-    const gridSizeSpan = document.querySelector(".grid-size-span");
-    gridSizeSpan.innerText = `${gridSize} x ${gridSize}`;
+    const gridSizeLabel = document.getElementById("grid-size-label");
+    gridSizeLabel.innerText = `${gridSize} x ${gridSize}`;
 }
 
 function onGridSizeChange(e) {

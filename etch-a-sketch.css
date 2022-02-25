@@ -2,28 +2,22 @@ body {
     font-family: monospace;
 }
 
-#grid-btns-parent-container {
+.etch-a-sketch {
     display: flex;
     justify-content: center;
 }
 
-#title-container {
+.primary-title {
     text-align: center;
+    width: 100%;
     padding: 40px 0px 40px 0px;
 }
 
-#grid-child-container {
+.etch-a-sketch__grid {
     display: grid;
     border: 1px solid transparent;
     height: 400px;
     width: 400px;
-}
-
-#grid-toggle-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 4px;
 }
 
 .row {
@@ -38,16 +32,12 @@ body {
     height: 100%;
 }
 
-#btns-parent-container {
+.etch-a-sketch__btns {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     width: 200px;
     margin: 0px 24px;
-}
-
-#btn-child-container {
-    width: 100%;
 }
 
 .btn {
@@ -65,19 +55,25 @@ body {
     background-color: #EEEEEE;
 }
 
-button:disabled {
-    background-color: #BDBDBD;
+.btn:disabled {
     color: inherit;
+    background-color: #BDBDBD;
 }
 
-input {
+.btn__color-input {
     cursor: pointer;
-}
-
-#color-input {
+    width: 40px;
     border-width: 0px;
     background-color: transparent;
-    width: 40px;
 }
 
+.toggle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4px;
+}
 
+.toggle__range-input {
+    cursor: pointer;
+}
