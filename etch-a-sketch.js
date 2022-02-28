@@ -16,7 +16,7 @@ const clearBtn = document.getElementById("clear-btn");
 // DEFINE FNS
 // Enable btns
 function enableAllBtns() {
-    const allBtns = document.querySelectorAll(".mode-btn");
+    const allBtns = document.querySelectorAll(".btn--mode");
     allBtns.forEach((allBtn) => {
         allBtn.disabled = false;
     });
@@ -25,7 +25,6 @@ function enableAllBtns() {
 // Grid
 function resetGrid () {
     gridSize = null;
-    
     const localRows = document.querySelectorAll(".row");
     localRows.forEach((localRows) => {
         localRows.remove();
@@ -67,7 +66,6 @@ function updateGridSizeLabel() {
 function onGridSizeChange(e) {
     resetGrid();
     gridSize = e.target.value;
-    console.log(gridSize);
     makeGrid();
     updateGridSizeLabel();
 }
