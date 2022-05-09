@@ -44,12 +44,12 @@ function clearGrid() {
 }
 
 function makeGrid() { 
-    for (i = 0; i < gridSize; i++) {
+    for (let i = 0; i < gridSize; i++) {
         const row = document.createElement("div");
         grid.append(row);
         row.classList.add("row");
 
-        for (j = 0; j < gridSize; j++) {
+        for (let j = 0; j < gridSize; j++) {
             const cell =  document.createElement("div");
             row.append(cell);
             cell.classList.add("cell");
