@@ -4,7 +4,7 @@
 Game for user to draw on a grid, upon mouse hover.
 <br>Created as part of The Odin Project Web Development Foundations <a href="https://www.theodinproject.com/lessons/foundations-etch-a-sketch">curriculum</a>.
 
-#### ► <a href="">Live demo</a> 👀
+#### ► <a href="https://emilielydiat.github.io/etch-a-sketch/">Live demo</a> 👀
 
 #### Features
 - **Draw** upon mouse hover
