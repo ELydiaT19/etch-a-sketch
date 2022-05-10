@@ -1,42 +1,29 @@
 <!DOCTYPE html>
-
+<html>
 <head>
-    <script src="EtchASketch.js" defer></script>
-    <link rel="stylesheet" href="EtchASketch.css">
+    <script src="etch-a-sketch.js" defer></script>
+    <link rel="stylesheet" href="etch-a-sketch.css">
 </head>
 
 <body>
-    <div id="title-container">
-        <h1>Etch-a-sketch</h1>
-    </div>
+    <h1 class="primary-title">Etch-a-sketch</h1>
 
-    <div id="grid-btns-parent-container">
+    <div class="etch-a-sketch">
+        <div class="etch-a-sketch__grid" id="grid"></div>
 
-        <div id="grid-parent-container">
-            <div id="grid-child-container"></div>
+        <div class="etch-a-sketch__toolbar">
+            <button class="btn btn--mode" id="singlecolor-btn">Color mode: 
+                <span><input type="color" class="btn__color-input" id="color-input" name="color-input">
+                <label for="color-input"></label></span>
+            </button>
+            <button class="btn btn--mode" id="rainbow-btn">🌈 Rainbow mode</button>
+            <button class="btn btn--mode" id="eraser-btn"> ⎚ Eraser</button>
+            <button class="btn" id="clear-btn">✖️ Clear canvas</button>
+            <div class="toggle">
+                <input type="range" class="toggle__range-input" id="grid-size-input" name="grid-size-input" min="1" max="100">
+                <label for="grid-size-input">Grid size: <span id="grid-size-label"></label>
+            </div>
         </div>
-
-        <div id="btns-parent-container">
-            <div id="btn-child-container">
-                <button id="singlecolor-btn" class="mode-btn btn">Color mode: 
-                    <span id="color-picker-span"><input type="color" id="color-input" name="color-input">
-                    <label for="color-input"></label></span>
-                </button>
-            </div>
-            <div id="btn-child-container">
-                <button id="rainbow-btn" class="mode-btn btn">🌈 Rainbow mode</button>
-            </div>
-            <div id="btn-child-container">
-                <button id="eraser-btn" class="mode-btn btn"> ⎚ Eraser</button>
-            </div>
-            <div id="btn-child-container">
-                <button id="clear-btn" class="btn">✖️ Clear canvas</button>
-            </div>
-            <div id="grid-toggle-container">
-                <input type="range" id="grid-size-input" name="grid-size-input" min="1" max="100">
-                <label for="grid-size-input">Grid size: <span class="grid-size-span" /></label>
-            </div>
-        </div> 
     </div>
 </body>
 </html>

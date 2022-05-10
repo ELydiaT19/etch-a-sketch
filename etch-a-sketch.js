@@ -4,9 +4,8 @@ let singleColorValue = "#000000";
 let mode = null;
 
 // SELECT ELEMENTS
-const gridContainer = document.getElementById("grid-child-container");
+const grid = document.getElementById("grid");
 const gridSizeInput = document.getElementById("grid-size-input");
-
 const colorInput = document.getElementById("color-input");
 
 const singlecolorBtn = document.getElementById("singlecolor-btn");
@@ -15,10 +14,9 @@ const eraserBtn = document.getElementById("eraser-btn");
 const clearBtn = document.getElementById("clear-btn");
 
 // DEFINE FNS
-
 // Enable btns
 function enableAllBtns() {
-    const allBtns = document.querySelectorAll(".mode-btn");
+    const allBtns = document.querySelectorAll(".btn--mode");
     allBtns.forEach((allBtn) => {
         allBtn.disabled = false;
     });
@@ -27,7 +25,6 @@ function enableAllBtns() {
 // Grid
 function resetGrid () {
     gridSize = null;
-    
     const localRows = document.querySelectorAll(".row");
     localRows.forEach((localRows) => {
         localRows.remove();
@@ -47,12 +44,12 @@ function clearGrid() {
 }
 
 function makeGrid() { 
-    for (i = 0; i < gridSize; i++) {
+    for (let i = 0; i < gridSize; i++) {
         const row = document.createElement("div");
-        gridContainer.append(row);
+        grid.append(row);
         row.classList.add("row");
 
-        for (j = 0; j < gridSize; j++) {
+        for (let j = 0; j < gridSize; j++) {
             const cell =  document.createElement("div");
             row.append(cell);
             cell.classList.add("cell");
@@ -62,14 +59,13 @@ function makeGrid() {
 }
 
 function updateGridSizeLabel() {
-    const gridSizeSpan = document.querySelector(".grid-size-span");
-    gridSizeSpan.innerText = `${gridSize} x ${gridSize}`;
+    const gridSizeLabel = document.getElementById("grid-size-label");
+    gridSizeLabel.innerText = `${gridSize} x ${gridSize}`;
 }
 
 function onGridSizeChange(e) {
     resetGrid();
     gridSize = e.target.value;
-    console.log(gridSize);
     makeGrid();
     updateGridSizeLabel();
 }
