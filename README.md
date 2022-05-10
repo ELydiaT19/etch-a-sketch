@@ -39,3 +39,4 @@ Game for user to draw on a grid, upon mouse hover.
 - Practiced **event listeners** with mouse hover events
 - Practiced **CSS Flexbox**
 - Improved my **code organisation**
+- Practiced **BEM naming convention** for CSS classes 
