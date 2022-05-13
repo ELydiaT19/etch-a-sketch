@@ -4,7 +4,7 @@
 Game for user to draw on a grid, upon mouse hover.
 <br>Created as part of The Odin Project Web Development Foundations <a href="https://www.theodinproject.com/lessons/foundations-etch-a-sketch">curriculum</a>.
 
-#### ► <a href="">Live demo</a> 👀
+#### ► <a href="https://emilielydiat.github.io/etch-a-sketch/">Live demo</a> 👀
 
 #### Features
 - **Draw** upon mouse hover
@@ -33,7 +33,7 @@ Game for user to draw on a grid, upon mouse hover.
 ## Takeaways
 - Learned how to **generate a random colour** upon event listened to, using `'#'+Math.floor(Math.random()*16777215).toString(16)` formula
 - Learned to use the **DOM to generate a grid from scratch**
-- Practiced **resetting variables**
+- Practiced **resetting application state**
 - Practiced printing variables' values in **DOM** elements
 - Practiced assigning CSS classes in DOM using `Element.classList`
 - Practiced **event listeners** with mouse hover events
