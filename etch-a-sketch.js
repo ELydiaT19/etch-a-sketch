@@ -16,7 +16,7 @@ const clearBtn = document.getElementById("clear-btn");
 // DEFINE FNS
 // Enable btns
 function enableAllBtns() {
-  const allBtns = document.querySelectorAll(".btn--mode");
+  const allBtns = document.querySelectorAll(".btn__mode");
   allBtns.forEach((allBtn) => {
     allBtn.disabled = false;
   });

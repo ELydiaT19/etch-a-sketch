@@ -40,6 +40,11 @@ body {
   margin: 0px 24px;
 }
 
+.etch-a-sketch__btn-wrapper {
+  display: flex;
+  align-items: center;
+}
+
 .btn {
   font-family: inherit;
   display: flex;
@@ -60,9 +65,14 @@ body {
   background-color: #bdbdbd;
 }
 
+.btn__mode--single {
+  width: 148px;
+}
+
 .btn__color-input {
   cursor: pointer;
-  width: 40px;
+  width: 48px;
+  height: 40px;
   border-width: 0px;
   background-color: transparent;
 }

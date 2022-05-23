@@ -12,8 +12,10 @@
       <div class="etch-a-sketch__grid" id="grid"></div>
 
       <div class="etch-a-sketch__toolbar">
-        <button class="btn btn--mode" id="singlecolor-btn">
-          Color mode:
+        <div class="etch-a-sketch__btn-wrapper">
+          <button class="btn btn__mode btn__mode--single" id="singlecolor-btn">
+            Color mode
+          </button>
           <span
             ><input
               type="color"
@@ -22,10 +24,10 @@
               name="color-input" />
             <label for="color-input"></label
           ></span>
-        </button>
-        <button class="btn btn--mode" id="rainbow-btn">🌈 Rainbow mode</button>
-        <button class="btn btn--mode" id="eraser-btn">⎚ Eraser</button>
-        <button class="btn" id="clear-btn">✖️ Clear canvas</button>
+        </div>
+        <button class="btn btn__mode" id="rainbow-btn">🌈 Rainbow mode</button>
+        <button class="btn btn__mode" id="eraser-btn">⎚ Eraser</button>
+        <button class="btn btn__mode" id="clear-btn">⨯ Clear canvas</button>
         <div class="toggle">
           <input
             type="range"
